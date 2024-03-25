@@ -43,58 +43,39 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+![312823451-0119401d-8e53-42c4-ab54-ce749dc6a03e](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/e1865b3c-9ba5-4ae3-8130-75314196e683)
 
 
 cat < file2
 ## OUTPUT
 cat < file2
+![312823636-9d6b43a7-9146-4ad3-bd12-6124400fb4d7](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/93397153-426e-49ce-b433-c42790615c81)
 
 
 ## OUTPUT
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![312824286-ec7146a1-7dcf-4519-b2bd-bb074874a9f6](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/e062edf1-4a63-427b-9a62-37ef061f8eff)
+
 comm file1 file2
  ## OUTPUT
+![312824209-2b388c18-8716-471f-86a5-104b81593a8b](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/05c49397-217d-4e0e-9e31-981f43ba8ad3)
 
  
 diff file1 file2
 ## OUTPUT
-localhost:~# cat > file1
-chanchal sindhvi
-c.k.shukla
-s.n.dasgupta
-sumit chakrobarty
-localhost:~# cat>file2
-anil aggarwal
-barun sengupta
-c.k.shukla
-lalit chowdury
-s.n.dasgupta
-localhost:~# cmp file1 file2
-file1 file2 differ: char 1, line 1
-localhost:~# comm file1 file2
-        anil aggarwal
-        barun sengupta
-        c.k.shukla
-chanchal sindhvi
-c.k.shukla
-        lalit chowdury
-                s.n.dasgupta
-sumit chakrobarty
-localhost:~# diff file1 file2
---- file1
-+++ file2
-@@ -1,4 +1,5 @@
--chanchal sindhvi
-+anil aggarwal
-+barun sengupta
- c.k.shukla
-+lalit chowdury
- s.n.dasgupta
--sumit chakrobarty
-```
+
+![312824209-2b388c18-8716-471f-86a5-104b81593a8b](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/a78dd0f2-c97f-43e0-b0b3-427637ea7627)
+diff file1 file2
+
+
+## OUTPUT
+
+![312824501-bdc3e442-d591-40aa-b92a-121299adbb65](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/071153b0-4607-477b-9e5f-1b010506a750)
+
+#Filters
+
 
 ### Create the following files file11, file22 as follows:
 
@@ -116,17 +97,20 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
+![312824664-141e89e4-c3d8-4296-b12d-a2e6bb80f2df](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/de3f331a-2bb9-4df2-b857-86cde0cdcd16)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
+![312824777-b1f5d32d-f1a3-4a66-9c0e-10d02548f316](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/e96044a5-af8e-4155-a777-a0b088bae5e5)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
+![312824982-336fe232-b5b0-424a-88fe-5ca75d10039f](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/9215084c-72d8-4339-8278-e6d65b2937ea)
 
 cat < newfile 
 ```
@@ -141,21 +125,25 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
+![312823117-fc26c416-54b1-4b9c-b839-1e6a77c2ff12](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/55f2321a-c935-4db9-a6c0-3ba4ded197e3)
 
 
 grep hello newfile 
 ## OUTPUT
 
 
+![312825332-3cfe2166-0ee0-46f4-9b7c-44512aeae4cd](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/e141ebcc-5eae-4bd7-95eb-4506a9df818a)
 
 
 grep -v hello newfile 
 ## OUTPUT
+![312825594-d6dd2db3-b402-47b5-84f7-35e3b2038e37](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/1ea81849-58ba-4460-bbb8-1eaac3752cf3)
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![312826006-eb5b87a0-bb58-4854-a95f-1063a74d1320](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/933b3400-135a-4f53-92e8-0301035689af)
 
 
 
@@ -163,16 +151,19 @@ cat newfile | grep -i "hello"
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
+![312826766-3c2aa26a-270d-42cf-9f04-ce10dc341942](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/a5c1bfa3-ff30-41a0-bc30-0329535288fe)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
+![312827082-04c00dca-5051-48a8-9333-c20a7bfd9328](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/907a0c95-4309-48ca-ae05-c59845ca3e27)
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![312827384-a08e3266-9005-4680-b75a-cb7687d0b869](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/5a0e4688-6c08-4951-beaf-a10c4c87f837)
 
 
 cat < newfile 
