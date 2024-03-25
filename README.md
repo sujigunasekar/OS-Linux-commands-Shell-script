@@ -160,161 +160,10 @@ grep -R ubuntu /etc
 grep -w -n world newfile   
 
 ## OUTPUT
-![312827384-a08e3266-9005-4680-b75a-cb7687d0b869](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/13899c93-f0de-49cc-b523-50675bbaf210)
 
 
+![312827384-a08e3266-9005-4680-b75a-cb7687d0b869](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/c9516882-d7fb-4cb2-929f-7c29661c60a5)
 
-cat > file23
-```
-1001 | Ram | 10000 | HR
-1001 | Ram | 10000 | HR
-1002 | tom |  5000 | Admin
-1003 | Joe |  7000 | Developer
-1005 | Sam |  5000 | HR
-1004 | Sit |  7000 | Dev
-1003 | Joe |  7000 | Developer
-1001 | Ram | 10000 | HR
-^d
-```
-
-
-sed -n -e '3p' file23
-## OUTPUT
-
-
-
-sed -n -e '$p' file23
-## OUTPUT
-
-
-
-sed  -e 's/Ram/Sita/' file23
-## OUTPUT
-
-
-
-sed  -e '2s/Ram/Sita/' file23
-## OUTPUT
-
-
-
-sed  '/tom/s/5000/6000/' file23
-## OUTPUT
-
-
-
-sed -n -e '1,5p' file23
-## OUTPUT
-
-
-
-sed -n -e '2,/Joe/p' file23
-## OUTPUT
-
-
-
-
-sed -n -e '/tom/,/Joe/p' file23
-## OUTPUT
-
-
-
-seq 10 
-## OUTPUT
-
-
-
-seq 10 | sed -n '4,6p'
-## OUTPUT
-
-cat > file11
-
-Hello world
-
-This is my world
-
-^d
-
-cat > file22
-
-1001 | Ram | 10000 | HR
-
-1002 | tom | 5000 | Admin
-
-1003 | Joe | 7000 | Developer
-
-^d
-
-cut -c1-3 file11
-
-## OUTPUT
-![312824664-141e89e4-c3d8-4296-b12d-a2e6bb80f2df](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/63d888df-a459-453c-a7ea-e2f303a3c781)
-
-cut -d "|" -f 1 file22
-
-
-
-## OUTPUT
-![312824777-b1f5d32d-f1a3-4a66-9c0e-10d02548f316](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/1fb39f9b-9ba9-4cfa-9a20-d6a5fca9b676)
-
-
-
-cut -d "|" -f 2 file22
-
-## OUTPUT
-![312824982-336fe232-b5b0-424a-88fe-5ca75d10039f](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/6d20246a-eb9b-45ab-a219-138653eeb9a7)
-
-cat < newfile
-
-Hello world
-
-hello world
-
-^d ` cat > newfile
-
-Hello world
-
-hello world
-
-^d
-
-grep Hello newfile
-## OUTPUT
-![312823117-fc26c416-54b1-4b9c-b839-1e6a77c2ff12](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/a0268508-b658-4d64-8c27-a16996ed9e67)
-
-grep hello newfile
-
-
-## OUTPUT
-![312825332-3cfe2166-0ee0-46f4-9b7c-44512aeae4cd](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/85b4540c-3720-4935-88b3-81f063e9a0e8)
-grep -v hello newfile
-
-
-
-## OUTPUT
-![312825594-d6dd2db3-b402-47b5-84f7-35e3b2038e37](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/7ae9e843-83c3-4ca0-8e37-8cce63d18e8b)
-cat newfile | grep -i "hello"
-
-
-## OUTPUT
-![312826006-eb5b87a0-bb58-4854-a95f-1063a74d1320](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/032817fb-7117-4055-87b8-a3eb33609680)
-cat newfile | grep -i -c "hello"
-
-
- ## OUTPUT
-![312826766-3c2aa26a-270d-42cf-9f04-ce10dc341942](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/79571480-1e83-4d53-be2b-06d1ac1d66d4)
-grep -R ubuntu /etc
-
-
- ## OUTPUT
-
-![312827082-04c00dca-5051-48a8-9333-c20a7bfd9328](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/68baa075-f57a-4b03-9b98-1c609955cdfd)
-grep -w -n world newfile
-
-
- 
-## OUTPUT
-![312827384-a08e3266-9005-4680-b75a-cb7687d0b869](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/6f375ae3-dfff-4807-9c6a-2e0cf077e663)
 
 cat < newfile
 
@@ -343,8 +192,9 @@ Unix is predecessor
 Linux is best in this World
 
 ^d
-
 egrep -w 'Hello|hello' newfile
+
+
 ## OUTPUT
 ![312830227-2e1abf54-ea02-4eb8-b1f6-fff5fef677e0](https://github.com/sujigunasekar/OS-Linux-commands-Shell-script/assets/119559822/d886a2ed-37a9-481e-9bf7-cc2f266e4354)
 egrep -w '(H|h)ello' newfile
